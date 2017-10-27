@@ -1,0 +1,62 @@
+#ck_waiting_bg,#ck_msg1_bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+	opacity: 0.5;
+	z-index: 1001;
+}
+#ck_waiting_content{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #ccc;
+	line-height:40px;
+	z-index: 1002;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -50px;
+	margin-top: -40px;
+}
+#ck_msg1_content{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	border:1px solid #ccc;
+	line-height:40px;
+	z-index: 1002;
+	margin-left: -250px;
+	margin-top: -250px;
+	box-sizing:border-box;
+}
+#ck_msg1_content .title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	background-color: #eee;
+	box-sizing:border-box;
+}
+#ck_msg1_content .title-text{
+	float: left;
+}
+#ck_msg1_content .close{
+	float: right;
+	cursor: pointer;
+}
+#ck_msg1_content .content{
+	width: 100%;
+	height: 470px;
+	padding: 10px;
+	box-sizing:border-box;
+	overflow: auto;
+}

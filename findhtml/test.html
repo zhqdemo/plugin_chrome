@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>正则表达式测试页面</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<span id="123">我是地球人</span><br/><br/><br/><br/><br/><br/><span title="好的">我是火星人</span>
+<a title="好的">我是蒙古人</a>
+
+</body>
+<script type="text/javascript">
+var html = $("html").html();
+var reg = /(<span[^<]*(我是)[^<]*<\/span>)/g;
+//var result = reg.exec(html);
+var result = html.match(reg);
+console.log(result);
+</script>
+</html>
